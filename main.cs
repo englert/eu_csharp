@@ -16,13 +16,13 @@ class Program {
     Console.WriteLine($"3. feladat: EU tagállamainak száma: {lista.Count} db");
     
 // 4.feladat: 2007-ben ? ország csatlakozott.
-    int count = 0;
-    foreach(string[] line in lista){
-        if ( line[1].Substring(0,4) == "2007"){
-            count++;
+    int darab = 0;
+    foreach(string[] sor in lista){
+        if ( sor[1].Substring(0,4) == "2007"){
+            darab++;
         }
     }
-    Console.WriteLine($"4. feladat: 2007-ben {count} ország csatlakozott.");
+    Console.WriteLine($"4. feladat: 2007-ben {darab} ország csatlakozott.");
 
 // 5. feladat: Magyarország csatlakozásának dátuma:
     string cs_datum = "";
